@@ -1,0 +1,11 @@
+<%= form_for(@article) do |f| %>
+
+<%= f.label :title, "Article's title:" %>
+<%= f.text_field :title, class: "form-control" %>
+
+<%= f.label :content, "Article's content:" %>
+<%= f.text_field :content, class: "form-control" %>
+
+<%= f.submit "Submit", :class => "btn form-control" %>
+
+<% end %>
